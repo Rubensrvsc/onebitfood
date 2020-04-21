@@ -45,14 +45,14 @@ r = Restaurant.create!(
     number: '1393', neighborhood: 'Brás', category_id: 1
 )
 
-r.image.attach(o: File.open(path_image), filename: '1.jpg')
+r.image.attach(io: File.open(path_image), filename: '1.jpg')
 pc = ProductCategory.create!(title: 'Pratos Mexicanos', restaurant: r)
 prod = Product.create!(name: 'Nacho Guacamole', 
     price: 19, description: 'Tortilhas com guacamole', product_category: pc)
 prod.image.attach(io: File.open('public/images/products/nachosg.jpg'), filename: 'nachosg.jpg')
 prod = Product.create!(name: 'Nacho', 
     price: 19, description: 'Tortilhas com milho', product_category: pc)
-prod.image.attach(io: File.open('public/images/products/nachos2.jpg'), filename: 'nachos2.jpg')
+prod.image.attach(io: File.open('public/images/products/nachosg2.jpeg'), filename: 'nachosg2.jpeg')
 
 
 # Mexican Restaurants

@@ -17,17 +17,17 @@ path_image = 'public/images/categories/mexican.jpg'
 c = Category.create(id: 1, title: 'mexicana')
 c.image.attach(io: File.open(path_image), filename: 'mexican.jpg')
 
-path_image = 'public/images/categories/italian.jpg'
+path_image = 'public/images/categories/italian.jpeg'
 c = Category.create(id: 2, title: 'italiana')
-c.image.attach(io: File.open(path_image), filename: 'italian.jpg')
+c.image.attach(io: File.open(path_image), filename: 'italian.jpeg')
 
-path_image = 'public/images/categories/japonese.jpg'
+path_image = 'public/images/categories/japonese.jpeg'
 c = Category.create(id: 3, title: 'japonesa')
-c.image.attach(io: File.open(path_image), filename: 'japonese.jpg')
+c.image.attach(io: File.open(path_image), filename: 'japonese.jpeg')
 
-path_image = 'public/images/categories/vegan.jpg'
+path_image = 'public/images/categories/vegan.jpeg'
 c = Category.create(id: 4, title: 'vegana')
-c.image.attach(io: File.open(path_image), filename: 'vegan.jpg')
+c.image.attach(io: File.open(path_image), filename: 'vegan.jpeg')
 
 path_image = 'public/images/categories/peruvian.jpg'
 c = Category.create(id: 5, title: 'peruana')
